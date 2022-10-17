@@ -6,14 +6,19 @@ android {
         applicationId "de.georgsieber.ballbreak"
         minSdkVersion 15
         targetSdkVersion 32
-        versionCode 6
-        versionName "1.5"
+        versionCode 7
+        versionName "1.6"
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
     }
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            applicationVariants.all { variant ->
+                variant.outputs.all { output ->
+                    output.outputFileName = 'ballbreak.apk'
+                }
+            }
         }
     }
     compileOptions {
