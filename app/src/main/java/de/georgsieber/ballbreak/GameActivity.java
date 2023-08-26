@@ -33,7 +33,6 @@ public class GameActivity extends AppCompatActivity {
     private View mContentView;
     private GameView mGameView;
     private View mOptionsView;
-    private int lastPoints;
     Date date;
     DateFormat dateFormat;
     private final Runnable mHidePart2Runnable = new Runnable() {
@@ -66,8 +65,7 @@ public class GameActivity extends AppCompatActivity {
         mGameView = findViewById(R.id.view_game);
         mGameView.setGameStateListener(new GameView.GameStateListener() {
             @Override
-            public void onGameOver(int points) {
-                lastPoints = points;
+            public void onGameOver(final int points) {
                 date = new Date();
                 dateFormat = android.text.format.DateFormat.getDateFormat(getApplicationContext());
                 mOptionsView.setVisibility(View.VISIBLE);
@@ -92,7 +90,7 @@ public class GameActivity extends AppCompatActivity {
                     builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
-                            insertScore(dateFormat.format(date), input.getText().toString(),lastPoints);
+                            insertScore(dateFormat.format(date), input.getText().toString(), points);
                             delayedHide(100);
                         }
                     });
