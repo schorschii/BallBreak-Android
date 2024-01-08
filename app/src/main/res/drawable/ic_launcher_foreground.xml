@@ -6,15 +6,6 @@
   <group android:translateX="240.6005"
       android:translateY="240.6005">
     <path
-        android:pathData="M-0.853,-0.912l962.785,0l0,962.785l-962.785,0z"
-        android:strokeAlpha="1"
-        android:strokeLineJoin="round"
-        android:strokeWidth="1.10000002"
-        android:fillColor="#000000"
-        android:strokeColor="#00000000"
-        android:fillAlpha="1"
-        android:strokeLineCap="butt"/>
-    <path
         android:pathData="M145.568,181.026m-278.414,0a278.414,278.414 0,1 1,556.827 0a278.414,278.414 0,1 1,-556.827 0"
         android:strokeAlpha="1"
         android:strokeWidth="1.58219779"
