@@ -1,0 +1,1 @@
+Das Ziel beim Minispiel BallBreak ist es, die Kugeln, die dem Finger folgen, an den Quadraten aufprallen zu lassen. Dabei darf mit dem Finger weder eine Kugel, noch ein Quadrat berührt werden.
