@@ -1,11 +1,11 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 34
     defaultConfig {
         applicationId "de.georgsieber.ballbreak"
         minSdkVersion 15
-        targetSdkVersion 34
+        targetSdkVersion 36
+        compileSdkVersion 34
         versionCode 8
         versionName "1.7"
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
